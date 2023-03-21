@@ -21,7 +21,7 @@ export function Main2(){
                   </div>
               <a href="" target="_blank"><Heading className='download'>Download now and experience GmAwoo Extension.</Heading></a>
             </GuideBox>
-            <Youtube><iframe width="350" height="200" src="https://www.youtube.com/embed/3OnnDqH6Wj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></Youtube>
+            <Youtube><iframe width="350" height="200" src="https://www.youtube.com/embed/3OnnDqH6Wj8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></Youtube>
             </VideoGuide>
             <TeamContainer>
                 <Heading className='team'>Meet the GmAwoo Team</Heading>
