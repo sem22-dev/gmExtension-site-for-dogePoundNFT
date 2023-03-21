@@ -9,13 +9,13 @@ export function Main(){
     return(
         <React.Fragment>
             <Hero>
-            <TextBox>
-              <Heading className='bigger'>Introducing the DogePoundNFT GmAwoo Extension for Twitter!</Heading>
-              <TextB>Upgrade your Twitter presence with GmAwoo Extension for DogePoundNFT community. Effortlessly showcase your prized collection and join the conversation with other passionate fans.</TextB>
-              <a href="#" target="_blank"><Button whileHover={{y: -6}}>Install Now</Button></a>
-            </TextBox>
-            <motion.img whileHover={{scale: 0.98}} className="image" src={dogeNFT}/>
-        </Hero>
+                <TextBox>
+                <Heading className='bigger'>Introducing the DogePoundNFT GmAwoo Extension for Twitter!</Heading>
+                <TextB>Upgrade your Twitter presence with GmAwoo Extension for DogePoundNFT community. Effortlessly showcase your prized collection and join the conversation with other passionate fans.</TextB>
+                <a href="#" target="_blank"><Button whileHover={{y: -6}}>Install it on your Google Chrome</Button></a>
+                </TextBox>
+                <motion.img whileHover={{scale: 0.98}} className="image" src={dogeNFT}/>
+            </Hero>
         <Main2 />
         </React.Fragment>
     )

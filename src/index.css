@@ -21,6 +21,20 @@ a{
   border-radius: 16px;
 }
 
+@media (min-width: 360px) and (max-width: 812px)  {
+            .image{
+              width: 300px;
+            }
+        }
+
+        @media only screen
+        and (min-device-width: 768px)
+        and (-webkit-min-device-pixel-ratio: 1) {
+          .image{
+            width: 500px
+          }
+      }
+
 .twitter-link{
   display: flex;
   gap: 4px;

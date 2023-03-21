@@ -50,7 +50,7 @@ export function Main2(){
 
                     <MemberDisplay>
                         <Upper>
-                          <PFP src="https://pbs.twimg.com/profile_images/1634603753444720641/ShAVIQPQ_400x400.jpg"/>
+                          <PFP src="https://pbs.twimg.com/profile_images/1638137270921494528/6-_N__l5_400x400.jpg"/>
                           <Names>
                               <Heading className='member name'>Sem</Heading>
                               <TextM className='member'>Front-end Developer</TextM>
