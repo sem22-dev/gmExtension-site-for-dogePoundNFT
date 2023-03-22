@@ -12,10 +12,13 @@ const Header = styled.div`
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 8px 12px rgba(255, 255, 255, 0.2);
-    @media (min-width: 360px) and (max-width: 812px)  {
+    @media (min-width: 360px) and (max-width: 820px)  {
             padding: 5px 20px;
             height: 60px;
         }
+        @media (max-width: 359px) {
+            padding: 5px 20px;;
+}
 `
 const Image = styled.img`
     width: 70px;
@@ -28,7 +31,7 @@ const Image = styled.img`
     &.twitter2{
         width: 20px;
     }
-    @media (min-width: 360px) and (max-width: 812px)  {
+    @media (min-width: 360px) and (max-width: 820px)  {
             width: 50px;
         }
 `
@@ -38,17 +41,20 @@ const Heading = styled(motion.h1)`
 
     &.logo{
         transform: rotate(-1.7deg);
-        @media (min-width: 360px) and (max-width: 812px)  {
+        @media (min-width: 360px) and (max-width: 820px)  {
             font-size: 20px;
         }
-    }
+        @media (max-width: 359px) {
+            font-size: 20px;
+        }
+}
     &.bigger{
         font-size: 40px;
         color: #402E32;
         /* -webkit-text-stroke: 1px #202C40; */
         font-weight: 700;
         letter-spacing: 0px;
-        @media (min-width: 360px) and (max-width: 812px)  {
+        @media (min-width: 360px) and (max-width: 820px)  {
             font-size: 30px;
         }
     }
@@ -56,7 +62,7 @@ const Heading = styled(motion.h1)`
         color: #fff;
         font-size: 25px;
         letter-spacing: 1px;
-        @media (min-width: 360px) and (max-width: 812px)  {
+        @media (min-width: 360px) and (max-width: 820px)  {
             font-size: 20px;
         }
     }
@@ -67,7 +73,7 @@ const Heading = styled(motion.h1)`
         &:hover{
             text-decoration: underline;
         }
-        @media (min-width: 360px) and (max-width: 812px)  {
+        @media (min-width: 360px) and (max-width: 820px)  {
             font-size: 20px;
         }
     }
@@ -77,6 +83,7 @@ const Heading = styled(motion.h1)`
         padding: 0px;
         color: #fff;
         letter-spacing: 1px;
+        font-size: 20px;
     }
     &.member{
             line-height: 24px;
@@ -99,29 +106,38 @@ const LOGO = styled.div`
     display: flex;
     align-items: center;
     gap: 15px;
-    @media (min-width: 360px) and (max-width: 812px)  {
+    @media (min-width: 360px) and (max-width: 820px)  {
         gap: 7px;
     }
 
 `
 
 const Hero = styled.div`
-    height: 87vh;
+    height: 100vh;
     background-color: #FFBE5C;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 150px;
-    @media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 1) {
-    padding: 0px 30px;
-    }
-    @media (min-width: 360px) and (max-width: 812px)  {
-        padding: 40px 20px 0px 20px;
-        flex-direction: column;
-    }
+    /* Small screens */
+@media (max-width: 359px) {
+  padding: 40px 20px 0px 20px;
+  flex-direction: column;
+  height: fit-content;
+}
+
+/* Medium screens */
+@media (min-width: 360px) and (max-width: 767px) {
+  padding: 40px 20px 0px 20px;
+  flex-direction: column;
+  height: fit-content;
+}
+
+/* Large screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  padding: 0px 30px;
+  height: fit-content;
+}
 `
 const TextBox = styled.div`
     display: flex;
@@ -151,12 +167,21 @@ const Button = styled(motion.button)`
     &:hover {
     background-color: #FFD1C6;
   }
+  /* @media (min-width: 280px) and (max-width : 653px) {
+            width: 200px;
+            height: 80px;
+        } */
 `
 const AdvertiseContainer = styled.div`
     height: fit-content;
     border: none;
     background-color: inherit;
     padding: 56px 100px 0px 150px;
+
+    @media (min-width: 280px) and (max-width: 653px)  {
+        padding: 50px 20px 0px 20px;
+        }
+
     @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
@@ -213,8 +238,22 @@ const TextM = styled.p`
         }
 `
 const Youtube = styled.div`
-    width: 50px;
-    height: auto;
+        iframe
+{ @media (min-width: 360px) and (max-width: 812px) {
+           width: 300px;
+           height: 200px;
+        }
+    /* @media (min-width: 280px) and (max-width : 653px) {
+            width: 200px;
+           height: 100px;
+        } */
+
+        @media (min-width: 811px) and (max-width: 1078px) {
+            width: 300px;
+           height: 200px;
+      }
+    }
+
 `
 const TeamContainer = styled.div`
     margin-top: 150px;
@@ -228,6 +267,11 @@ const VideoGuide = styled.div`
     display: flex;
     gap: 90px;
     margin-bottom: 56px;
+
+    @media (min-width: 280px) and (max-width: 653px)  {
+            flex-direction: column;
+        }
+
     @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px) {
@@ -271,6 +315,12 @@ const WrapTeam = styled.div`
     justify-content: space-evenly;
     gap: 60px;
     margin-top: 30px;
+
+    @media (min-width: 280px) and (max-width : 653px) {
+            flex-direction: column;
+            gap: 0px;
+        }
+
     @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)

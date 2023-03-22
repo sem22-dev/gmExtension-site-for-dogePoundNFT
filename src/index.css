@@ -21,11 +21,16 @@ a{
   border-radius: 16px;
 }
 
-@media (min-width: 360px) and (max-width: 812px)  {
+@media (min-device-width: 360px) and (max-device-width: 812px)  {
             .image{
               width: 300px;
             }
         }
+        /* @media (min-width: 280px) and (max-width : 653px){
+          .image{
+            width: 200px;
+          }
+      } */
 
         @media only screen
         and (min-device-width: 768px)
