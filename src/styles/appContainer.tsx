@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion"
 
 const AppContainer = styled.div`
-    height: fit-content;
     background-color: #402E32;
 `
 const Header = styled.div`
@@ -118,7 +117,8 @@ const Hero = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 150px;
+    padding: 20px 150px;
+    gap: 10px;
     /* Small screens */
 @media (max-width: 359px) {
   padding: 40px 20px 0px 20px;
@@ -128,14 +128,14 @@ const Hero = styled.div`
 
 /* Medium screens */
 @media (min-width: 360px) and (max-width: 767px) {
-  padding: 40px 20px 0px 20px;
+  padding: 40px 20px 10px 20px;
   flex-direction: column;
   height: fit-content;
 }
 
 /* Large screens */
 @media (min-width: 768px) and (max-width: 1024px) {
-  padding: 0px 30px;
+  padding: 10px 30px;
   height: fit-content;
 }
 `
@@ -172,7 +172,7 @@ const Button = styled(motion.button)`
             height: 80px;
         } */
 `
-const AdvertiseContainer = styled.div`
+const SecondContainer = styled.div`
     height: fit-content;
     border: none;
     background-color: inherit;
@@ -187,7 +187,7 @@ const AdvertiseContainer = styled.div`
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     padding: 56px 0px 0px 30px;
-    height: fit-content;
+    height: unset;
 }
 @media (min-width: 360px) and (max-width: 812px)  {
             padding: 50px 20px 0px 20px;
@@ -277,6 +277,7 @@ const VideoGuide = styled.div`
   and (max-device-width: 1024px) {
     flex-direction: column;
     gap: 50px;
+    align-items: center;
 }
 @media (min-width: 360px) and (max-width: 812px)  {
             flex-direction: column;
@@ -337,6 +338,9 @@ const WrapTeam = styled.div`
 const PolicySection = styled.div`
     background-color: #D2925A;
     padding: 50px 70px 50px 70px;
+    @media (min-width: 360px) and (max-width: 812px)  {
+        padding: 50px 30px;
+        }
 `
 const PolicyText = styled.div`
     display: flex;
@@ -351,5 +355,5 @@ const PolicyHeading = styled.div`
 `
 
 export { AppContainer, Header, Image, Heading, LOGO, Hero, TextBox, TextB,
-    Button, AdvertiseContainer, GuideBox, TextM, Youtube,
+    Button, SecondContainer, GuideBox, TextM, Youtube,
     TeamContainer, VideoGuide, MemberDisplay, Upper, PFP, Names, WrapTeam, PolicySection, PolicyText, PolicyHeading }

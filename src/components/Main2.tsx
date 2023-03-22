@@ -1,5 +1,5 @@
 import { AppContainer, Header, Image, Heading, LOGO, Hero, TextBox, TextB,
-    Button, AdvertiseContainer, GuideBox, TextM, Youtube, TeamContainer,VideoGuide,
+    Button, SecondContainer, GuideBox, TextM, Youtube, TeamContainer,VideoGuide,
     MemberDisplay, Upper, PFP, Names, WrapTeam } from "../styles/appContainer"
 
     import logo from "../assets/logo.png"
@@ -9,7 +9,7 @@ import { AppContainer, Header, Image, Heading, LOGO, Hero, TextBox, TextB,
 
 export function Main2(){
     return(
-        <AdvertiseContainer>
+        <SecondContainer>
             <VideoGuide>
             <GuideBox>
               <Heading className='ads' >Here's How it Works :</Heading>
@@ -61,6 +61,6 @@ export function Main2(){
                 </WrapTeam>
             </TeamContainer>
             <Link to="/privacy-policy"><TextM className='member member4'>Privacy Policy</TextM></Link>
-        </AdvertiseContainer>
+        </SecondContainer>
     )
 }
