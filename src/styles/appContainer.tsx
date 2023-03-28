@@ -5,7 +5,6 @@ const AppContainer = styled.div`
     background-color: #402E32;
 `
 const Header = styled.div`
-    height: 80px;
     padding: 10px 70px;
     display: flex;
     align-items: center;
@@ -13,10 +12,9 @@ const Header = styled.div`
     box-shadow: 0px 8px 12px rgba(255, 255, 255, 0.2);
     @media (min-width: 360px) and (max-width: 820px)  {
             padding: 5px 20px;
-            height: 60px;
         }
         @media (max-width: 359px) {
-            padding: 5px 20px;;
+            padding: 5px 20px;
 }
 `
 const Image = styled.img`
@@ -108,11 +106,9 @@ const LOGO = styled.div`
     @media (min-width: 360px) and (max-width: 820px)  {
         gap: 7px;
     }
-
 `
 
 const Hero = styled.div`
-    height: 100vh;
     background-color: #FFBE5C;
     display: flex;
     align-items: center;
@@ -123,20 +119,17 @@ const Hero = styled.div`
 @media (max-width: 359px) {
   padding: 40px 20px 0px 20px;
   flex-direction: column;
-  height: fit-content;
 }
 
 /* Medium screens */
 @media (min-width: 360px) and (max-width: 767px) {
   padding: 40px 20px 10px 20px;
   flex-direction: column;
-  height: fit-content;
 }
 
 /* Large screens */
 @media (min-width: 768px) and (max-width: 1024px) {
   padding: 10px 30px;
-  height: fit-content;
 }
 `
 const TextBox = styled.div`
@@ -173,7 +166,6 @@ const Button = styled(motion.button)`
         } */
 `
 const SecondContainer = styled.div`
-    height: fit-content;
     border: none;
     background-color: inherit;
     padding: 56px 100px 0px 150px;
@@ -187,7 +179,6 @@ const SecondContainer = styled.div`
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     padding: 56px 0px 0px 30px;
-    height: unset;
 }
 @media (min-width: 360px) and (max-width: 812px)  {
             padding: 50px 20px 0px 20px;
@@ -286,15 +277,10 @@ const VideoGuide = styled.div`
 `
 const MemberDisplay = styled.div`
   width: 280px;
-  height: 150px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   margin-top: 0px;
-  @media (min-width: 360px) and (max-width: 812px)  {
-            gap: 0px;
-
-        }
 `
 const Upper = styled.div`
   display: flex;
@@ -319,7 +305,7 @@ const WrapTeam = styled.div`
 
     @media (min-width: 280px) and (max-width : 653px) {
             flex-direction: column;
-            gap: 0px;
+            gap: 20px;
         }
 
     @media only screen
@@ -332,7 +318,7 @@ const WrapTeam = styled.div`
 }
 @media (min-width: 360px) and (max-width: 812px)  {
             flex-direction: column;
-            gap: 0px;
+            gap: 20px;
         }
 `
 const PolicySection = styled.div`

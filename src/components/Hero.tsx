@@ -12,7 +12,7 @@ export function Main(){
                 <TextBox>
                 <Heading className='bigger'>Introducing the DogePoundNFT GmAwoo Extension for Twitter!</Heading>
                 <TextB>Upgrade your Twitter presence with GmAwoo Extension for DogePoundNFT community. Effortlessly showcase your prized collection and join the conversation with other passionate fans.</TextB>
-                <a href="#" target="_blank"><Button whileHover={{y: -6}}>Install it on your Google Chrome</Button></a>
+                <a href="https://chrome.google.com/webstore/detail/gm-awoo/pndmpldablgonafmbhokmgbebckjekkn" target="_blank"><Button whileHover={{y: -6}}>Install it on your Google Chrome</Button></a>
                 </TextBox>
                 <motion.img whileHover={{scale: 0.98}} className="image" src={dogeNFT}/>
             </Hero>
